@@ -33,11 +33,11 @@ export const LoginScreen: React.FC<Props> = ({ navigation }) => {
     try {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1500));
-      
+
       if (values.rememberMe) {
         await saveEmail(values.email);
       }
-      
+
       Alert.alert('Success', 'Login successful!');
     } catch (error) {
       Alert.alert('Error', 'Something went wrong. Please try again.');
@@ -78,7 +78,7 @@ export const LoginScreen: React.FC<Props> = ({ navigation }) => {
             <View style={styles.rememberMeContainer}>
               <Switch
                 value={values.rememberMe}
-                onValueChange={(value) => setFieldValue('rememberMe', value)}
+                onValueChange={(value : boolean) => {setFieldValue('rememberMe', value)}}
                 accessibilityRole="switch"
                 accessibilityLabel="Remember me"
               />
