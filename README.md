@@ -50,7 +50,7 @@ AuthApp/
 ### Installation Steps
 1. Clone the repository:
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/surendran-V/AuthApp.git
 cd AuthApp
 ```
 
@@ -95,8 +95,8 @@ adb devices
 - Form Validation
 - Secure Storage for Remembered Email
 
-## Working Screenshots
-[Add your app screenshots here]
+## Video Demonstration
+https://drive.google.com/file/d/1IqqwMWuo4nlXwjA2cewsM7AXfPZz-0zV/view?usp=drive_link
 
 ## Challenges and Solutions 🧩
 - Form Validation Implementation
@@ -118,8 +118,6 @@ adb devices
 - [x] Remember Me Feature
 - [x] Error Handling
 - [x] TypeScript Implementation
-- [ ] Unit Tests
-- [ ] E2E Testing
 
 ## Development Notes
 - For local development, ensure all dependencies are installed
