@@ -6,7 +6,7 @@
  */
 // App.tsx
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { LoginScreen } from './src/screens/LoginScreen';
 import { SignUpScreen } from './src/screens/SignUpScreen';
@@ -17,13 +17,13 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen 
-          name="Login" 
+        <Stack.Screen
+          name="Login"
           component={LoginScreen}
           options={{ title: 'Login' }}
         />
-        <Stack.Screen 
-          name="SignUp" 
+        <Stack.Screen
+          name="SignUp"
           component={SignUpScreen}
           options={{ title: 'Sign Up' }}
         />

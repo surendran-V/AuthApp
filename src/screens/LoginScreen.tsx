@@ -78,7 +78,7 @@ export const LoginScreen: React.FC<Props> = ({ navigation }) => {
             <View style={styles.rememberMeContainer}>
               <Switch
                 value={values.rememberMe}
-                onValueChange={(value : boolean) => {setFieldValue('rememberMe', value)}}
+                onValueChange={(value : boolean) => {setFieldValue('rememberMe', value);}}
                 accessibilityRole="switch"
                 accessibilityLabel="Remember me"
               />
