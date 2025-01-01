@@ -15,7 +15,7 @@ interface Props {
 export const SignUpScreen: React.FC<Props> = ({ navigation }) => {
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSignUp = async (values: SignUpFormValues) => {
+  const handleSignUp = async (_values: SignUpFormValues) => {
     setIsLoading(true);
     try {
       // Simulate API call
